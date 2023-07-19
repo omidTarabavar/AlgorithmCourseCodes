@@ -3,7 +3,7 @@ package OurImplementation;
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
-public class Evaluate {
+public class Evaluate2 {
     public static void main(String[] args) {
         Stack2<String> ops = new Stack2<>();
         Stack2<Double> vals = new Stack2<>();

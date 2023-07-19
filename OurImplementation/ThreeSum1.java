@@ -1,7 +1,9 @@
+package OurImplementation;
+
 import edu.princeton.cs.algs4.StdRandom;
 import edu.princeton.cs.algs4.Stopwatch;
 
-public class ThreeSum {
+public class ThreeSum1 {
     static final int MAX = 100;
     public static void main(String[] args) {
         for(int i = 1; i <= 16000; i *= 2){
