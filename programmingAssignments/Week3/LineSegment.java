@@ -1,3 +1,5 @@
+package programmingAssignments.Week3;
+
 /*************************************************************************
  *  Compilation:  javac LineSegment.java
  *  Execution:    none
