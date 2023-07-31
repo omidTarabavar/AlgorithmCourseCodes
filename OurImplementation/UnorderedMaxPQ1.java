@@ -18,20 +18,17 @@ public class UnorderedMaxPQ1 <Key extends Comparable<Key>>{
     public Key delMax(){
         int max = 0;
         for(int i = 0; i < N; i++)
-            if(less(max,pq[i]))
+            if(less(max,i))
                 max = i;
-        exch(pq,max,N-1);
+        exch(max,N-1);
         return pq[--N];
     }
 
-    private static boolean less(Comparable v, Comparable w) {
-        return v.compareTo(w) < 0;
+    private boolean less(int i, int j){
+        return pq[i].compareTo(pq[j]) < 0;
     }
-
-    private static void exch(Comparable[] a, int i, int j) {
-        Comparable swap = a[i];
-        a[i] = a[j];
-        a[j] = swap;
+    private void exch(int i, int j){
+        Key t = pq[i]; pq[i] = pq[j]; pq[j] = t;
     }
 
     public static void main(String[] args) {
