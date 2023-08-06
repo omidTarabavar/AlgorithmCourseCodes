@@ -1,3 +1,5 @@
+package programmingAssignments.Week4;
+
 import java.util.ArrayList;
 
 public class Board {
